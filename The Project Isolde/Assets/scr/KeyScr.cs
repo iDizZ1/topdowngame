@@ -45,24 +45,18 @@ public class KeyScr : MonoBehaviour
             switch (Textfield.text)
             {
                 //отслыки на лор мира
-                case "Ольга":
-                    TextAnswer.text = "Верное имя.";
-                    break;
-                case "Оля":
+                case "Изольда":
                     TextAnswer.text = "Верное имя.";
                     break;
                 case "Андрей":
                     TextAnswer.text = "Не все в этом мире обречены на счастье";
                     break;
-                case "Наталья":
-                    TextAnswer.text = "Ваша жизнь превратится в ад"; //когда-то это имя будет активировать хард-мод
-                    break;
-                case "Наташв":
-                    TextAnswer.text = "Ваша жизнь превратится в ад"; //когда-то это имя будет активировать хард-мод
-                    break;
                 //отсылки на другие игры
                 case "Чара":
                     TextAnswer.text = "Где ножи? = )";
+                    break;
+                case "Фриск":
+                    TextAnswer.text = "Ваша жизнь превратится в ад"; //когда-то это имя будет активировать хард-мод
                     break;
                 case "Андертейл":
                     TextAnswer.text = "В ЭТОМ МИРЕ УБИВАЙ ИЛИ БУДЕШЬ УБИТ";
