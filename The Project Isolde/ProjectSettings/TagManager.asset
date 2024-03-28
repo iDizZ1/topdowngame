@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Name
   - Enemy
+  - SpawnBullet
   layers:
   - Default
   - TransparentFX
