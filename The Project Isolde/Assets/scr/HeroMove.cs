@@ -7,6 +7,7 @@ public class HeroMove : MonoBehaviour
     private Rigidbody2D rb;
     public float moveSpeed = 5f;
     public int byaka = 6;
+    private int a = 0;
 
     public Animator anim;
 
@@ -25,39 +26,67 @@ public class HeroMove : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKey(KeyCode.D)){
+        if (Input.GetKeyDown(KeyCode.Q) )
+        {
+            if (a == 0)
+            {
+                anim.SetBool("SwordSwing", true);
+                a=1;
+            }
+            else
+            {
+                anim.SetBool("SwordSwing", false);
+                a = 0;
+            }
+            
+        }
+        if (Input.GetKey(KeyCode.D) & anim.GetBool("Attack") == false){
             gameObject.transform.Translate(Vector3.right * moveSpeed * Time.deltaTime);
             anim.SetBool("move_right", true);
+            anim.SetBool("MoveWithoutWeap", true);
             byaka = 6;
         } else {
             anim.SetBool("move_right", false);
+          
         }
-        if (Input.GetKey(KeyCode.A)){
+        if (Input.GetKey(KeyCode.A) & anim.GetBool("Attack") == false)
+        {
             gameObject.transform.Translate(Vector3.left * moveSpeed * Time.deltaTime);
             anim.SetBool("move_left", true);
+            anim.SetBool("MoveWithoutWeap", true);
             byaka = 4;
         } else {
             anim.SetBool("move_left", false);
+            
         }
-        if (Input.GetKey(KeyCode.S)){
+        if (Input.GetKey(KeyCode.S) & anim.GetBool("Attack") == false){
             gameObject.transform.Translate(Vector3.down * moveSpeed * Time.deltaTime);
             anim.SetBool("move_down", true);
+            anim.SetBool("MoveWithoutWeap", true);
             byaka = 2;
         } else {
             anim.SetBool("move_down", false);
+            
         }
-        if (Input.GetKey(KeyCode.W)){
+        if (Input.GetKey(KeyCode.W) & anim.GetBool("Attack") == false)
+        {
             gameObject.transform.Translate(Vector3.up * moveSpeed * Time.deltaTime);
             anim.SetBool("move_up", true);
+            anim.SetBool("MoveWithoutWeap", true);
             byaka = 8;
         } else {
             anim.SetBool("move_up", false);
+            
         }
         if (Input.GetKeyDown(KeyCode.Z)){
             StartCoroutine(Shoot());
         }
         if (Input.GetKeyDown(KeyCode.X)){
             anim.SetBool("shoot", true);
+        }
+        if (Input.GetKeyDown(KeyCode.C)) {
+            anim.SetBool("Attack", true);
+            StartCoroutine(ClWeapAttack());
         }
     }
 
@@ -68,5 +97,11 @@ public class HeroMove : MonoBehaviour
         Instantiate(bullet, bul_sp.transform.position, Quaternion.identity);
         yield return new WaitForSeconds(0.20f);
         anim.SetBool("shoot", false);
+    }
+    IEnumerator ClWeapAttack()
+    {
+        anim.SetBool("Attack", true);
+        yield return new WaitForSeconds(0.6f);
+        anim.SetBool("Attack", false);
     }
 }
