@@ -23,6 +23,7 @@ public class GameMenu : MonoBehaviour
         {
             OpenCloseMenu();
         }
+
     }
 
     public void OpenCloseMenu()
