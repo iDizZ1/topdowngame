@@ -14,6 +14,10 @@ public class InfoPlayer: MonoBehaviour
         if (HP <= 0){
             SceneManager.LoadScene("Death");
         }
+        if (Input.GetKeyDown(KeyCode.F))
+        {
+            HP = HP + 40;
+        }
     }
     void OnCollisionEnter2D(Collision2D other)
     {
