@@ -9,6 +9,12 @@ public class HeroName : MonoBehaviour
     public TMP_Text Textfield;
     public string Hname;
     
+    void Awake()
+    {
+        if (Hname == ""){
+            Hname = "Чара";
+        }
+    }
     void Update()
     {
        Textfield.text = Hname;

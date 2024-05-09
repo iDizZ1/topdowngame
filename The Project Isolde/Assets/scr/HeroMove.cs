@@ -40,7 +40,7 @@ public class HeroMove : MonoBehaviour
             }
             
         }
-        if (Input.GetKey(KeyCode.D) & anim.GetBool("Attack") == false){
+        if ((Input.GetKey(KeyCode.D) || Input.GetKey("right")) & anim.GetBool("Attack") == false){
             gameObject.transform.Translate(Vector3.right * moveSpeed * Time.deltaTime);
             anim.SetBool("move_right", true);
             anim.SetBool("MoveWithoutWeap", true);
@@ -49,7 +49,7 @@ public class HeroMove : MonoBehaviour
             anim.SetBool("move_right", false);
           
         }
-        if (Input.GetKey(KeyCode.A) & anim.GetBool("Attack") == false)
+        if ((Input.GetKey(KeyCode.A) || Input.GetKey("left")) & anim.GetBool("Attack") == false)
         {
             gameObject.transform.Translate(Vector3.left * moveSpeed * Time.deltaTime);
             anim.SetBool("move_left", true);
@@ -59,7 +59,7 @@ public class HeroMove : MonoBehaviour
             anim.SetBool("move_left", false);
             
         }
-        if (Input.GetKey(KeyCode.S) & anim.GetBool("Attack") == false){
+        if ((Input.GetKey(KeyCode.S) || Input.GetKey("down")) & anim.GetBool("Attack") == false){
             gameObject.transform.Translate(Vector3.down * moveSpeed * Time.deltaTime);
             anim.SetBool("move_down", true);
             anim.SetBool("MoveWithoutWeap", true);
@@ -68,7 +68,7 @@ public class HeroMove : MonoBehaviour
             anim.SetBool("move_down", false);
             
         }
-        if (Input.GetKey(KeyCode.W) & anim.GetBool("Attack") == false)
+        if ((Input.GetKey(KeyCode.W) || Input.GetKey("up")) & anim.GetBool("Attack") == false)
         {
             gameObject.transform.Translate(Vector3.up * moveSpeed * Time.deltaTime);
             anim.SetBool("move_up", true);

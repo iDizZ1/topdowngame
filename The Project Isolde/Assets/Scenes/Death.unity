@@ -269,6 +269,7 @@ GameObject:
   - component: {fileID: 518005976}
   - component: {fileID: 518005975}
   - component: {fileID: 518005974}
+  - component: {fileID: 518005977}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -342,41 +343,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &666660581
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 666660586}
-  - component: {fileID: 666660585}
-  - component: {fileID: 666660584}
-  - component: {fileID: 666660583}
-  - component: {fileID: 666660582}
-  m_Layer: 5
-  m_Name: Canvas
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!82 &666660582
+--- !u!82 &518005977
 AudioSource:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 666660581}
+  m_GameObject: {fileID: 518005973}
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: a48566bb9f583b345ab6e0ffa4cb0df9, type: 3}
+  m_audioClip: {fileID: 8300000, guid: e75e9667f4b9db441af0d46be89dcf30, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
-  m_Pitch: 1.11
-  Loop: 0
+  m_Pitch: 0.1
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -458,6 +439,25 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!1 &666660581
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 666660586}
+  - component: {fileID: 666660585}
+  - component: {fileID: 666660584}
+  - component: {fileID: 666660583}
+  m_Layer: 5
+  m_Name: Canvas
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!114 &666660583
 MonoBehaviour:
   m_ObjectHideFlags: 0
