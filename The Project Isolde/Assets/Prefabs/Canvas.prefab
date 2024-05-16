@@ -1254,6 +1254,7 @@ MonoBehaviour:
   sound: {fileID: 8300000, guid: 5fa14b587d5cb4f458b42f8ae02034a8, type: 3}
   characterSprite: {fileID: 21300000, guid: ae08e6f064ebaf042b5f2aaa36e94a0b, type: 3}
   imageHolder: {fileID: 2291789824876436231}
+<<<<<<< HEAD
 --- !u!1 &951840538804778569
 GameObject:
   m_ObjectHideFlags: 0
@@ -1305,6 +1306,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DialogObject: {fileID: 2291789824755082107}
   DialogObject1: {fileID: 7983660213097182347}
+=======
+>>>>>>> ff0a5155902e0e6ca19998193a1ae34fd34c8283
 --- !u!1 &2291789824697781967
 GameObject:
   m_ObjectHideFlags: 0
@@ -1548,7 +1551,11 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
+<<<<<<< HEAD
   m_IsActive: 0
+=======
+  m_IsActive: 1
+>>>>>>> ff0a5155902e0e6ca19998193a1ae34fd34c8283
 --- !u!224 &2291789824755082100
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1811,6 +1818,10 @@ GameObject:
   - component: {fileID: 2291789824801479964}
   - component: {fileID: 2291789824801479966}
   - component: {fileID: 2291789824801479965}
+<<<<<<< HEAD
+=======
+  - component: {fileID: 6151194170175192545}
+>>>>>>> ff0a5155902e0e6ca19998193a1ae34fd34c8283
   m_Layer: 5
   m_Name: DialogueHolder
   m_TagString: Untagged
@@ -1885,6 +1896,21 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+<<<<<<< HEAD
+=======
+--- !u!114 &6151194170175192545
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2291789824801465059}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7beac93beac843f4296b236111f64709, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+>>>>>>> ff0a5155902e0e6ca19998193a1ae34fd34c8283
 --- !u!1 &2291789824805231427
 GameObject:
   m_ObjectHideFlags: 0
@@ -5215,8 +5241,11 @@ RectTransform:
   - {fileID: 2291789826303452375}
   - {fileID: 2291789826337238945}
   - {fileID: 2291789824755082100}
+<<<<<<< HEAD
   - {fileID: 5072427088316513392}
   - {fileID: 430919908784100172}
+=======
+>>>>>>> ff0a5155902e0e6ca19998193a1ae34fd34c8283
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -8126,6 +8155,7 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+<<<<<<< HEAD
 --- !u!1 &3002207557727243829
 GameObject:
   m_ObjectHideFlags: 0
@@ -8501,3 +8531,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boltat: {fileID: 5106845654640755471}
+=======
+>>>>>>> ff0a5155902e0e6ca19998193a1ae34fd34c8283

@@ -5,16 +5,29 @@ using UnityEngine;
 namespace DialogueSystem{
     public class DialogueHolder : MonoBehaviour
     {
+<<<<<<< HEAD
         public Transform Player;
 
         void Update()
         {
+=======
+        public GameObject DialogObject;
+        void Update()
+        {
+            if (Input.GetKeyDown(KeyCode.B))
+            {
+                DialogObject.SetActive(true);
+            }
+>>>>>>> ff0a5155902e0e6ca19998193a1ae34fd34c8283
 
         }
 
         private void Awake()
         {
+<<<<<<< HEAD
             Player = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
+=======
+>>>>>>> ff0a5155902e0e6ca19998193a1ae34fd34c8283
             StartCoroutine(dialogueSequence());
         }
         private IEnumerator dialogueSequence()
