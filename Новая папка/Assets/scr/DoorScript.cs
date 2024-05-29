@@ -27,7 +27,7 @@ public class DoorScript : UsingObjects
     {
         base.close();
         animationController.SetTrigger("close");
-        BoxCollider2D.enabled = true;
+        BoxCollider2D.enabled = false;
     }
     
 }
